@@ -36,4 +36,55 @@ static node* create_node(void *pval){
     return pnode;
 }
 
-//
+//新建链表
+int create_dlink(){
+    //创建表头
+    phead = create_node(NULL);
+    if (!phead){
+        return -1;
+    }
+    count = 0;
+    return 0;
+}
+
+//检查双向链表是否为空
+int dlink_is_empty(){
+    return count == 0;
+}
+
+//返回双向链表的大小
+int dlink_size(){
+    return count;
+}
+
+//获取双向链表中第index位置的节点
+static node* dlink_node(int index){
+     if(index < 0 || index >= count){
+         printf("%s failed! index out of bound \n",__func__);
+         return NULL;
+     }
+
+    //正向查找
+    if(index <= (count/2)){
+        int i = 0;
+        node *pnode = phead ->next;
+        while ((i++) < index){
+            pnode = pnode ->next;
+        }
+        return pnode;
+    }
+
+    //反向查找
+    int j = 0;
+    int rindex = count - index -1;
+    node *rnode = phead ->prev;
+    while ((j++) < rindex){
+        rnode = rnode -> prev;
+    }
+    return  rnode;
+}
+
+
+
+
+
