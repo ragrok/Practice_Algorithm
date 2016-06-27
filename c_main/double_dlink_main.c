@@ -2,7 +2,7 @@
 // Created by ragrok on 16-6-23.
 //
 #include "stdio.h"
-#include "./c_header/double_link.h"
+#include "../c_header/double_link.h"
 
 void int_test(){
     int iarr[4] = {10,20,30,40};
