@@ -100,10 +100,10 @@ void object_test(){
     }
     destory_dlink();
 }
-int main(){
-//    int_test();
-//    string_test();
-//    object_test();
-
-    return 0;
-}
+//int main(){
+////    int_test();
+////    string_test();
+////    object_test();
+//
+//    return 0;
+//}
