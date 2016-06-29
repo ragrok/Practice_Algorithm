@@ -50,7 +50,7 @@ void string_test(){
 
     //打印全部数据
     int i;
-    int *p;
+    char *p;
     int sz = dlink_size();
     for (i = 0;i < sz;i++){
         p = (char *)dlink_get(i);
@@ -101,9 +101,9 @@ void object_test(){
     destory_dlink();
 }
 //int main(){
-////    int_test();
-////    string_test();
-////    object_test();
+//    int_test();
+//    string_test();
+//    object_test();
 //
 //    return 0;
 //}
