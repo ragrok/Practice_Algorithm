@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/c_source/double_link.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/c_source/offset.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/c_source/slink_stack.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/c_source/arrary_queue.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/c_source/array_stack.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>

@@ -64,7 +64,7 @@ static int pop(){
     ret = phead -> val;
     pnode = phead;
     phead = phead -> next;
-    free(pnode);
+   free(pnode);
 
     return  ret;
 }
@@ -85,6 +85,7 @@ static int size(){
     struct node *pnode = phead;
 
     while (pnode != NULL){
+        //移动到下一位
         pnode = pnode -> next;
         count++;
     }
@@ -106,34 +107,38 @@ static void print_single_link(){
 
     printf("stack size()=%d\n",size());
     struct node *pnode = NULL;
+    //将表头赋给另一个指针，不破坏数据
+    pnode = phead;
 
-    while (phead != NULL){
-        printf("%d\n",phead -> val);
-        pnode = phead;
-        phead = phead -> next;
-        free(pnode);
+    while (pnode != NULL){
+        //打印当前指针指向地址的数据
+        printf("valueis %d\n",pnode -> val);
+        //移动到下一个节点
+        pnode = pnode -> next;
     }
+    //运行完，释放空间
+    free(pnode);
 }
 
-void main(){
-    int tmp = 0;
-    //将10，20,30一次推入栈中
-    push(10);
-    push(20);
-    push(30);
-
-    print_single_link();
-    //将栈顶元素赋值给tmp，不能删除该元素
-    tmp = pop();
-    printf("tmp=%d\n",tmp);
-    print_single_link();
-
-    //只将栈顶赋值给tmp，不删除元素
-    tmp = peek();
-    printf("tmp=%d\n",tmp);
-    push(40);
-    print_single_link();
-
-    //destory
-    destory_single_link();
-}
+//void main(){
+//    int tmp = 0;
+//    //将10，20,30一次推入栈中
+//    push(10);
+//    push(20);
+//    push(30);
+//
+//    print_single_link();
+//    //将栈顶元素赋值给tmp，删除该元素
+//    tmp = pop();
+//    printf("tmp=%d\n",tmp);
+//    print_single_link();
+//
+//    //只将栈顶赋值给tmp，不删除元素
+//    tmp = peek();
+//    printf("tmp=%d\n",tmp);
+//    push(40);
+//    print_single_link();
+//
+//    //destory
+//    destory_single_link();
+//}
