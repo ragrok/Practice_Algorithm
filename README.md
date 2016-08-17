@@ -25,3 +25,8 @@
 2.特点：数据按照先进先出方式进出队列
 3.队列只允许在队首进行删除操作，在队尾进行插入操作
 4.通常包括两大操作：入队列和出队列
+
+- windowds 系统若使用mingw编译，请修改make文件，将标准改为gun++11
+- linux若不能编译，请执行 sudo apt install gcc g++, make文件配置不变。
+- 工具：Clion，小巧好用，是现在个人用过最好的c/c++编译器。
+- 参考：http://www.cnblogs.com/skywang12345/p/3603935.html，代码基本一样，重在理解。
