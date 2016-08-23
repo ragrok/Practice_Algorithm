@@ -1,7 +1,7 @@
 //
 // Created by ragrok on 16-6-23.
 //
-#include "../c_header/double_link.h"
+#include "../../c_header/link_struct/double_link.h"
 #include "stdio.h"
 #include "malloc.h"
 
