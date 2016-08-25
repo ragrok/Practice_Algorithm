@@ -94,6 +94,7 @@ void main(){
     //打印队列
     printf("is_empty()= %d\n",queue_is_empty());
     printf("size()=%d\n",queue_size());
+    //循环删除队列里的元素
     while (!queue_is_empty()){
          printf("%d\n",queue_pop());
     }

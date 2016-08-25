@@ -77,27 +77,27 @@ void print_array_stack(){
     }
 }
 
-//void main(){
-//    int tmp = 0;
-//    //创建栈
-//    create_array_stack(12);
-//    push(10);
-//    push(20);
-//    push(30);
-//
-//    print_array_stack();
-//    //将栈顶元素赋值给tmp，并删除栈顶元素
-//    tmp = pop();
-//    printf("tmp=%d\n",tmp);
-////    print_array_stack();
-//    //只将栈顶元素复制给tmp，不删除元素
-//    tmp = peek();
-//    printf("tmp=%d\n",tmp);
-////    print_array_stack();
-//
-//    push(40);
-//    print_array_stack();
-//    //销毁栈
-//    destrory_array_stack();
-//}
+/*void main(){
+    int tmp = 0;
+    //创建栈
+    create_array_stack(12);
+    push(10);
+    push(20);
+    push(30);
+
+    print_array_stack();
+    //将栈顶元素赋值给tmp，并删除栈顶元素
+    tmp = pop();
+    printf("tmp=%d\n",tmp);
+    print_array_stack();
+    //只将栈顶元素复制给tmp，不删除元素
+    tmp = peek();
+    printf("tmp=%d\n",tmp);
+    print_array_stack();
+
+    push(40);
+    print_array_stack();
+    //销毁栈
+    destrory_array_stack();
+}*/
 

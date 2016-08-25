@@ -27,6 +27,7 @@ static struct node* create_node(int val){
     }
     pnode -> val = val;
     pnode -> next = NULL;
+    //返回创建成功的节点
     return pnode;
 }
 
@@ -61,10 +62,14 @@ static int pop(){
 
     int ret;
     struct node *pnode;
+    //得到头结点的值
     ret = phead -> val;
+    //将头结点赋给新建的节点
     pnode = phead;
+    //头节点的下一个节点覆盖原来的头节点，形成新的头节点
     phead = phead -> next;
-   free(pnode);
+    //释放原头节点的内存
+    free(pnode);
 
     return  ret;
 }

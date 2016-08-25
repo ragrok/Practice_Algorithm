@@ -4,11 +4,12 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/c_header/link_struct/double_link.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/c_main/link_struct_test/double_dlink_main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/c_source/stack/slink_stack.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/c_source/stack/array_stack.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/c_source/tree/tree.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/c_source/link_struct/double_link.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/c_source/link_struct/offset.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/c_source/link_struct/slink_stack.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/c_source/link_struct/arrary_queue.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/c_source/link_struct/array_stack.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/c_source/queue/arrary_queue.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
