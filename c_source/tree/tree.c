@@ -140,3 +140,41 @@ Node* bstree_right_node(Node *x){
     }
     return  y;
 }
+
+//插入
+static Node* bstree_insert(BSTree tree,Node *z){
+     Node *y = NULL;
+     Node *x = tree;
+
+    //查找z的插入位置
+    while (x != NULL){
+        y = x;
+        if (z -> key < x -> key){
+             x = x -> left;
+        } else{
+            x = x-> right;
+        }
+    }
+
+    z -> parents = y;
+
+    if (y == NULL){
+       tree = z;
+    } else if(z -> key < y -> key){
+        y -> left = z;
+    } else{
+        y -> right = z;
+    }
+    return  tree;
+}
+
+
+Node* insert_bstree(BSTree tree,Type key){
+     Node *z;
+    //节点建立失败，则返回
+    if((z = create_bstree_node(key, NULL,NULL,NULL)) == NULL){
+        return tree;
+    }
+    return bstree_insert(tree,z);
+}
+
